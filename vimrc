@@ -86,12 +86,17 @@ set hlsearch
 "search like in modern browsers
 set incsearch
 
+"finding files, :b for autocompletion any open buffer, :find , * for fuzzy
+set path+=**
+set wildignore+=**/node_modules/** 
+set wildmenu
+
 "show matching brackets when text indicator is over them
 set showmatch
 
 "no annoying sound on errors
 set noerrorbells
-set novisualbell
+set visualbell
 set t_vb=
 set tm=500
 
