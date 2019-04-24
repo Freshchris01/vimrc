@@ -55,11 +55,20 @@ endif
 syntax on
 colo desert
 
+set nocompatible
+let mapleader=" "
+"set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'easymotion/vim-easymotion'
+
+call vundle#end()
+
 filetype plugin on
 filetype indent on
 
 set autoread
-
 set history=500
 
 "A buffer becomes hidden when it is abandoned
